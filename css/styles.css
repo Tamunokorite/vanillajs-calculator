@@ -1,0 +1,112 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    background: #000;
+    color: #fff;
+}
+body {
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.calculator {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+input[type=text] {
+    width: 100%;
+    border: none;
+    outline: none;
+    height: 20%;
+    background: inherit;
+    color: #fff;
+    text-align: right;
+    margin-right: 3rem;
+    font-size: 10vh;
+    overflow-x: hidden;
+}
+
+.keys {
+    width: 100%;
+    height: 100%;
+}
+
+/* table tr td {
+    margin: 0;
+} */
+
+.row {
+    height: 18%;
+    margin-bottom: 2%;
+}
+
+.zero-row {
+    height: 18%;
+    margin-bottom: 2%;
+}
+
+button {
+    border-radius: 50%;
+    height: 100%;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    font-size: 40px;
+    color: white;
+}
+
+.btn-dark {
+    background: rgba(28, 28, 28, 1);
+}
+
+.btn-dark:hover {
+    background: rgba(28, 28, 28, 0.7);
+}
+
+.btn-light {
+    background: rgba(212, 212, 210, 1);
+    color: #000 !important;
+}
+
+.btn-light:hover {
+    background: rgba(212, 212, 210, 0.7);
+}
+
+.btn-orange {
+    background: rgba(255, 149, 0, 1);
+}
+
+.btn-orange:hover {
+    background: rgba(255, 149, 0, 0.7);
+}
+
+@media screen and (max-width: 543px) {
+    button {
+        width: 20%;
+        margin: 0.4rem;
+    }
+    
+    .zero-row {
+        width: 100%;
+    }
+    
+    .zero-row button {
+        width: 20%;
+    }
+    
+    #zero {
+        width: 45%;
+        border-radius: 60px;
+        padding-left: 20px;
+        text-align: left;
+    }
+}

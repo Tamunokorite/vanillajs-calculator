@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Calculator</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="calculator">
+        <input type="text" id="val" class="screen" value="0">
+
+        <div class="keys">
+            <div class="row">
+                <button type="button" id="clear" onclick="clr()" class="btn-light"></button>
+                <button type="button" onclick="negate()" class="btn-light">+/-</button>
+                <button type="button" onclick="percent()" class="btn-light">%</button>
+                <button type="button" onclick="calc('/')" class="btn-orange">&divide;</button>
+            </div>
+            <div class="row">
+                <button type="button" onclick="display('7')" class="btn-dark">7</button>
+                <button type="button" onclick="display('8')" class="btn-dark">8</button>
+                <button type="button" onclick="display('9')" class="btn-dark">9</button>
+                <button type="button" onclick="calc('*')" class="btn-orange">&times;</button>
+            </div>
+            <div class="row">
+                <button type="button" onclick="display('4')" class="btn-dark">4</button>
+                <button type="button" onclick="display('5')" class="btn-dark">5</button>
+                <button type="button" onclick="display('6')" class="btn-dark">6</button>
+                <button type="button" onclick="calc('-')" class="btn-orange">-</button>
+            </div>
+            <div class="row">
+                <button type="button" onclick="display('1')" class="btn-dark">1</button>
+                <button type="button" onclick="display('2')" class="btn-dark">2</button>
+                <button type="button" onclick="display('3')" class="btn-dark">3</button>
+                <button type="button" onclick="calc('+')" class="btn-orange">+</button>
+            </div>
+            <div class="zero-row">
+                <button type="button" onclick="display(0)" class="btn-dark" id="zero">0</button>
+                <button type="button" onclick="decimal()" class="btn-dark">.</button>
+                <button type="button" onclick="calculate()" class="btn-orange">=</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/index.js"></script>
+</body>
+</html>
